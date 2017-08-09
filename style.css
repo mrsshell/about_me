@@ -1,4 +1,4 @@
-header, section, footer, {
+header, aside, section, footer, {
   display: block}
   body {
     background-image: url(http://www.uidownload.com/files/841/25/241/free-radiant-background.jpg);
@@ -14,4 +14,21 @@ header, section, footer, {
       color: #6600cc;
       font-family: sans-serif;
       font-weight: 25px;
+      font-size: 25px;
     }
+ .activities {
+   display: block;
+   color: #6600cc;
+   font-family: sans-serif;
+   font-weight: 25px;
+   float: right;
+   margin:1%auto;
+   width:20%;
+   padding:1px, 1px,1px,1px;
+   border: thin;
+   box-sizing: border-box;
+ }
+.doing {
+  font-size: 20px;
+  font-weight: 10px;
+}
