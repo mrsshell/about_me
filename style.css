@@ -7,10 +7,11 @@ header, section, footer, {
     background-color: #ccffcc;
     color: #3399ff;
     font-family: sans-serif;
-    font-weight: 40;
+    font-weight: 40px;
+    font-size: 60px;
     }
     h2{
       color: #6600cc;
       font-family: sans-serif;
-      font-weight: 25;
+      font-weight: 25px;
     }
