@@ -50,3 +50,6 @@ if (twins === 'yes' || twins === 'y') {
 else {
   alert('You are CORRECT, they are boy and girl faternal twins.');
 }
+
+var favColor = [blue, green, pruple, pink, orange];
+prompt = ('What are my two favorite colors?');
