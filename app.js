@@ -1,6 +1,6 @@
 'use strict';
-var whereDo = prompt('Where do you come from?');
-alert('I hope you have enjoyed ' + whereDo);
+var yourName = prompt('What is your name?');
+alert('Good to meet you ' + yourName);
 console.log('Where are you from?');
 
 var dreamJob = prompt('What is your dream job?');
