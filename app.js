@@ -1,5 +1,5 @@
 'use strict';
-/*var yourName = prompt('What is your name?');
+var yourName = prompt('What is your name?');
 alert('Good to meet you ' + yourName);
 console.log('Where are you from?');
 
@@ -73,7 +73,7 @@ else {
   alert('You are not guessing from this list.');
 }
 console.log('Guessing favorite color game');
-*/
+
 var counter = 0;
 
 for (var i = 0; i < 4; i++) {
