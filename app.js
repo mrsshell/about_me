@@ -51,23 +51,42 @@ else {
   alert('You are CORRECT, they are boy and girl faternal twins.');
 }
 
-var favColor = ['blue', 'green', 'pruple', 'pink', 'orange'];
+var favColor = ['blue', 'green', 'purple', 'pink', 'orange'];
 var guessColor = prompt('What are my two favorite colors?');
 if (guessColor === favColor[0]) {
   alert('Yes, one of my favorite colors is blue.');
+  if(guessColor === 'blue') {
+    prompt('Good guess, what is my other favorite color?');
+  }
 }
 else if(guessColor === favColor[1]) {
   alert('I absolutely love green!');
+  if(guessColor === 'green') {
+    prompt('Can you guess my other favorite color?');
+  }
 }
-else if(GuessColor === favColor[2]){
+else if(guessColor === favColor[2]){
   alert('Are you kidding????');
+  if(guessColor === 'purple') {
+    prompt('I\'m sure, try again');
+  }
 }
 else if (guessColor === favColor[3]) {
   alert('Guess again!');
+  if(guessColor === 'pink') {
+    prompt('Go ahead guess.');
+  }
 }
+
 else if(guessColor === favColor[4]) {
   alert('yea, not quite...');
+  if( guessColor === 'orange') {
+    pompt('Ugg! guess again.');
+  }
 }
 else {
   alert('You are not guessing from this list.');
 }
+console.log('Guessing favorite color game');
+var primeNum = [3,17,23,27,31,43];
+var myNum = primeNum;
