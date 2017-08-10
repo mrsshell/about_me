@@ -51,8 +51,23 @@ else {
   alert('You are CORRECT, they are boy and girl faternal twins.');
 }
 
-var favColor = [blue, green, pruple, pink, orange];
-prompt = ('What are my two favorite colors?');
- if (favColor ==== blue){
-   
- }
+var favColor = ['blue', 'green', 'pruple', 'pink', 'orange'];
+var guessColor = prompt('What are my two favorite colors?');
+if (guessColor === favColor[0]) {
+  alert('Yes, one of my favorite colors is blue.');
+}
+else if(guessColor === favColor[1]) {
+  alert('I absolutely love green!');
+}
+else if(GuessColor === favColor[2]){
+  alert('Are you kidding????');
+}
+else if (guessColor === favColor[3]) {
+  alert('Guess again!');
+}
+else if(guessColor === favColor[4]) {
+  alert('yea, not quite...');
+}
+else {
+  alert('You are not guessing from this list.');
+}
