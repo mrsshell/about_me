@@ -43,5 +43,15 @@ header, aside, section, footer, {
 }*/
 .content-box
 {
-  box-sizing: content-box;
+  box-sizing: border-box;
+  margin:auto;
+  border: 20px solid #cc00ff;
+  width: 60%;
+  text-align: center;
+}
+
+.color-list {
+  width: 30%;
+  margin: auto;
+  text-align: left;
 }

@@ -53,3 +53,6 @@ else {
 
 var favColor = [blue, green, pruple, pink, orange];
 prompt = ('What are my two favorite colors?');
+ if (favColor ==== blue){
+   
+ }
