@@ -1,5 +1,5 @@
 'use strict';
-var yourName = prompt('What is your name?');
+/*var yourName = prompt('What is your name?');
 alert('Good to meet you ' + yourName);
 console.log('Where are you from?');
 
@@ -52,41 +52,47 @@ else {
 }
 
 var favColor = ['blue', 'green', 'purple', 'pink', 'orange'];
-var guessColor = prompt('What are my two favorite colors?');
+var guessColor = prompt('What is favorite color?');
+
 if (guessColor === favColor[0]) {
-  alert('Yes, one of my favorite colors is blue.');
-  if(guessColor === 'blue') {
-    prompt('Good guess, what is my other favorite color?');
-  }
+  alert('Yes, one of my favorite colors is blue, but not quite.');
 }
 else if(guessColor === favColor[1]) {
   alert('I absolutely love green!');
-  if(guessColor === 'green') {
-    prompt('Can you guess my other favorite color?');
-  }
 }
-else if(guessColor === favColor[2]){
-  alert('Are you kidding????');
-  if(guessColor === 'purple') {
-    prompt('I\'m sure, try again');
-  }
+else if(guessColor === favColor[2]) {
+  alert('Are you kidding?');
 }
 else if (guessColor === favColor[3]) {
-  alert('Guess again!');
-  if(guessColor === 'pink') {
-    prompt('Go ahead guess.');
-  }
+  alert('Not really!');
 }
-
 else if(guessColor === favColor[4]) {
   alert('yea, not quite...');
-  if( guessColor === 'orange') {
-    pompt('Ugg! guess again.');
-  }
 }
 else {
   alert('You are not guessing from this list.');
 }
 console.log('Guessing favorite color game');
-var primeNum = [3,17,23,27,31,43];
-var myNum = primeNum;
+*/
+var counter = 0;
+
+for (var i = 0; i < 4; i++) {
+  var guessIt = prompt('Can you guess my favorite number?');
+  counter ++;
+  console.log(parseInt(guessIt));
+  if (parseInt(guessIt) === 27) {
+    alert('You have guessed my favorite number!');
+    break;
+  }
+  else if(parseInt(guessIt) < 10 ){
+    alert('You have guessed too low.');
+  }
+  else if(parseInt(guessIt) < 10 && parseInt(guessIt) < 26){
+    alert('You are geting close');
+  }
+  else if (parseInt(guessIt) > 27) {
+    alert('You have guessed too high');
+  }
+}
+alert('You have made ' + counter + ' guess');
+console.log('This is the number game');
