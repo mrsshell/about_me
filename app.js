@@ -1,6 +1,6 @@
 'use strict';
-var whereDo = prompt('Where do you come from?');
-alert('I hope you have enjoyed ' + whereDo);
+/*var yourName = prompt('What is your name?');
+alert('Good to meet you ' + yourName);
 console.log('Where are you from?');
 
 var dreamJob = prompt('What is your dream job?');
@@ -50,3 +50,49 @@ if (twins === 'yes' || twins === 'y') {
 else {
   alert('You are CORRECT, they are boy and girl faternal twins.');
 }
+
+var favColor = ['blue', 'green', 'purple', 'pink', 'orange'];
+var guessColor = prompt('What is favorite color?');
+
+if (guessColor === favColor[0]) {
+  alert('Yes, one of my favorite colors is blue, but not quite.');
+}
+else if(guessColor === favColor[1]) {
+  alert('I absolutely love green!');
+}
+else if(guessColor === favColor[2]) {
+  alert('Are you kidding?');
+}
+else if (guessColor === favColor[3]) {
+  alert('Not really!');
+}
+else if(guessColor === favColor[4]) {
+  alert('yea, not quite...');
+}
+else {
+  alert('You are not guessing from this list.');
+}
+console.log('Guessing favorite color game');
+*/
+var counter = 0;
+
+for (var i = 0; i < 4; i++) {
+  var guessIt = prompt('Can you guess my favorite number?');
+  counter ++;
+  console.log(parseInt(guessIt));
+  if (parseInt(guessIt) === 27) {
+    alert('You have guessed my favorite number!');
+    break;
+  }
+  else if(parseInt(guessIt) < 10 ){
+    alert('You have guessed too low.');
+  }
+  else if(parseInt(guessIt) < 10 && parseInt(guessIt) < 26){
+    alert('You are geting close');
+  }
+  else if (parseInt(guessIt) > 27) {
+    alert('You have guessed too high');
+  }
+}
+alert('You have made ' + counter + ' guess');
+console.log('This is the number game');

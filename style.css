@@ -1,8 +1,9 @@
-header, section, footer, {
+header, aside, section, footer, {
   display: block}
   body {
     background-image: url(http://www.uidownload.com/files/841/25/241/free-radiant-background.jpg);
   }
+
   h1{
     background-color: #ccffcc;
     color: #3399ff;
@@ -10,8 +11,51 @@ header, section, footer, {
     font-weight: 40px;
     font-size: 60px;
     }
+
     h2{
-      color: #6600cc;
+      color: #6600cc;s
       font-family: sans-serif;
       font-weight: 25px;
+      font-size: 25px;
     }
+ .activities {
+   display: block;
+   color: #6600cc;
+   font-family: sans-serif;
+   font-weight: 25px;
+   float: right;
+   margin:1%auto;
+   width:20%;
+   padding:1px, 1px,1px,1px;
+   border: thin;
+   box-sizing: border-box;
+ }
+.doing {
+  font-size: 20px;
+  font-weight: 10px;
+}
+/*div {
+  width: 200px;
+  height:200px;
+  border: thin;
+  border-color: #cc00ff;
+
+}*/
+.content-box
+{
+  box-sizing: border-box;
+  margin:auto;
+  border: 20px solid #cc00ff;
+  width: 40%;
+  text-align: center;
+  background-color: #ccccff;
+  font-family: sans-serif;
+  font-weight: 20px;
+  color: #660066;
+  }
+
+.color-list {
+  width: 30%;
+  margin: auto;
+  text-align: left;
+}
