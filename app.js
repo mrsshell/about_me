@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 var yourName = prompt('Hi there, What is your name?');
 alert('Good to meet you ' + yourName + ' ' + 'let\'s play a guessing game and you can learn all about me!');
 console.log('the user will imput a name to play a game');

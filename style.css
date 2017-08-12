@@ -13,10 +13,17 @@ header, aside, section, footer, {
     }
 
     h2{
-      color: #6600cc;s
+      color: #6600cc;
       font-family: sans-serif;
       font-weight: 25px;
       font-size: 25px;
+    }
+
+    h3{
+      color: #6600cc;
+      font-family: sans-serif;
+      font-weight: 20px;
+      font-size: 20px;
     }
  .activities {
    display: block;
@@ -31,8 +38,9 @@ header, aside, section, footer, {
    box-sizing: border-box;
  }
 .doing {
+
   font-size: 20px;
-  font-weight: 10px;
+  font-weight: 25px;
 }
 /*div {
   width: 200px;
@@ -50,7 +58,7 @@ header, aside, section, footer, {
   text-align: center;
   background-color: #ccccff;
   font-family: sans-serif;
-  font-weight: 20px;
+  font-weight: 25px;
   color: #660066;
   }
 
