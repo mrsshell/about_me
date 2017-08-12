@@ -52,7 +52,7 @@ function question3 () {
 }
 question3();
 
-function question4() {
+function question4 () {
   var run = prompt('Do I like to run?')toLowerCase();
   console.log('Q4: Do I like to run?');
   console.log('A:' + run);
@@ -66,8 +66,10 @@ function question4() {
 }
 question4();
 
-function () {
+function question5() {
   var backpack = prompt('Do I like to backpack?').toLowerCase();
+  console.log('Q5: Do I like to backpack?');
+  console.log('A' + backpack);
   if (backpack === 'yes' || backpack === 'y') {
     alert('You probably think I\'m a Grearhead too! I do like to backpack.');
     correctYay++;
@@ -77,22 +79,28 @@ function () {
     youSoWrong++;
   }
 }
+question5();
 
-function () {
-  var twins = prompt('Are my twins identical?');
-  if (twins.toLowerCase() === 'yes' || twins.toLowerCase() === 'y') {
+function question6() {
+  var twins = prompt('Are my twins identical?').toLowerCase();
+  console.log('Q6: Are my twins identical?');
+  console.log('A:' + twins);
+  if (twins === 'yes' || twins === 'y') {
     alert('My twins are NOT identical.');
-    //wrong++;
-  }
-  console.log('YES is not the correct answer.')
-  else {
+    youSoWrong++;
+  } else {
     alert('You are CORRECT, they are boy and girl faternal twins.');
-    //correct++;
-  }
-  console.log('In this case no is the correct answer.')
+    correctYay++;
+  }  
 }
+question6();
 
-/*var favColor = ['blue', 'green', 'purple', 'pink', 'orange','black'];
+var totalCorrect = correctYay;
+var wrongAnswer = youSoWrong;
+  alert('Your total right answer is ' + totalCorrect + '.');
+  alert('You had ' + wrongAnswer + 'wrong answers');
+
+/*var fav'Color = ['blue', 'green', 'purple', 'pink', 'orange','black'];
 var guessColor = prompt('What is favorite color?');
 
 if (guessColor === favColor[0]) {
