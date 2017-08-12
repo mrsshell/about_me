@@ -7,9 +7,11 @@ header, aside, section, footer, {
   h1{
     background-color: #ccffcc;
     color: #3399ff;
+    align-content: center;
     font-family: sans-serif;
     font-weight: 40px;
-    font-size: 60px;
+    font-size: 70px;
+    padding-left: 50px;
     }
 
     h2{
@@ -31,9 +33,9 @@ header, aside, section, footer, {
    font-family: sans-serif;
    font-weight: 25px;
    float: right;
-   margin:1%auto;
+   margin:2%auto;
    width:20%;
-   padding:1px, 1px,1px,1px;
+   padding:15px,15px,15px,30px;
    border: thin;
    box-sizing: border-box;
  }
@@ -58,7 +60,7 @@ header, aside, section, footer, {
   text-align: center;
   background-color: #ccccff;
   font-family: sans-serif;
-  font-weight: 25px;
+  font-weight: 30px;
   color: #660066;
   }
 
