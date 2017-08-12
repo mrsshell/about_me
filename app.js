@@ -10,37 +10,43 @@ var yourCorrectScore = correct;
 var yourWrong = wrong;
 
 var dreamJob = prompt('Do you think my dream job is building web pages?');
-if (dreamJob.toLowerCase() === 'yes' || 'y'); {
+if (dreamJob.toLowerCase() === 'yes' ||  dreamJob.toLowerCase() 'y'); {
 alert('You are correct!');
   correct++;
 }
-console.log('This is the correct answer.');
+console.log('This is the correct answer for job.');
 else {
   alert('Sorry, I really want to build web pages.');
   wrong++;
 }
 console.log('This counts as wrong.');
 
-var business = prompt('Have you ever thought about starting a business?').toLowerCase();
-if (business === 'yes' || business === 'y') {
-  alert('Good for you!');
+var business = prompt('Have I ever owned a business?');
+if (business.toLowerCase() === 'yes' || business.toLowerCase() === 'y') {
+  alert('Yes, I owned a hair salon!');
+    correct++;
 }
+console.log('this is the correct answer for business.');
 else {
-  alert('Keep dreaming, and one day you will do it!');
+  alert('Give me some credit for being ambitiuos!');
+  wrong++;
 }
-console.log('jobs');
+console.log('wrong answer for business.');
 
-var art = prompt('Do you enjoy fingerpainting?').toLowerCase();
-if (art === 'yes' || art === 'y') {
-  alert('Go ahead, let\'s make a mess!');
+var art = prompt('Do I like to fingerpaint?');
+if (art.toLowerCase() === 'no' || art.toLowerCase() === 'n') {
+  alert('It\'s a bit too messy for me, so you are right!');
+    correct++;
 }
+console.log('This is the correct answer for art.');
 else {
-  alert('Go wash your hands anyway!');
+  alert('Too squishy and gushy for me!');
+    wrong++;
 }
-console.log('Messy art');
+console.log('Not my type of art.');
 
-var run = prompt('Do you run?').toLowerCase();
-if (run === 'yes' || run === 'y') {
+var run = prompt('Do I like to run?');
+if (run.toLowerCase() === 'yes' || run.toLowerCase() === 'y') {
   alert('YAAY! GO FOR IT!!!');
 }
 else {
