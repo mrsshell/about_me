@@ -1,7 +1,7 @@
 'use strict';
 
 var yourName = prompt('Hi there, What is your name?');
-alert('Good to meet you ' + yourName + 'let\'s play a guessing game and you can learn all about me!');
+alert('Good to meet you ' + yourName + ' ' + 'let\'s play a guessing game and you can learn all about me!');
 console.log('the user will imput a name to play a game');
 
 alert('We can keep score of all your\'re correct answers, and you\'re wrong answers too.');
@@ -97,51 +97,57 @@ question6();
 
 var totalCorrect = correctYay;
 var wrongAnswer = youSoWrong;
-  console.log('Total right and wrong answers.')
-  alert(yourName'Your total right answer is ' + totalCorrect + '.');
-  alert(yourName + 'You had ' + wrongAnswer + 'wrong answers');
+  console.log('Total right and wrong answers.');
+  alert(yourName + ' Your total right answers are ' + totalCorrect + '.');
+  alert('And ' + yourName + ' You had ' + wrongAnswer + ' wrong answers.');
 
-
+/*
 var favColor = ['blue', 'green', 'purple', 'pink', 'orange','black'];
-
-function question7() {
+//function question7() {
+  var guessColor = prompt('What is favorite color? Green, purple, pink, blue, black, or orage? You have six chances.').toLowerCase();
   var totalChances = 0;
+  for (var i = 0; i <= 6; i++) {
   while(totalChances < 6);
-  var guessColor = prompt('What is favorite color? You have six chances.').toLowerCase();
   console.log('What is my favorite color?');
   console.log('A:' + guessColor);
+  console.log('Color that is not included is false.')
 
-  if (guessColor.includes(favColor[0])) {
+  if(guessColor === favColor[0]) {
     alert('Yes, my favorite colors is ' + favColor);
     totalChances++
     break;
   }
-  else {
+  else if(guessColor === favColor[1,2,3,4,5]){
     alert('Nope! Try again.');
     totalChances++;
     }
+    else if(guessColor !== favColor) {
+    alert('That is not on the color list')
+    totalChances++
+    }
   }
 }
-question7();
-
+//question7();
 var totalGuesses = totalChances;
 console.log('Tally of guesses.')
 alert(yourName + ' You made a total of ' + totalGuesses + 'guesses.');
+*/
 
 
-var counter = 0;
-
-for (var i = 0; i < 4; i++) {
+  var counter = 0;
+  for (var i = 0; i < 4; i++) {
   var guessIt = prompt('Can you guess my favorite number between 10 and 30?');
   console.log('Q: Guess my favorite number.')
-  console.log('A:' + guessIt + 'number of guesses' counter);
+  console.log('A:' + guessIt + 'number of guesses' + counter);
   if (parseInt(guessIt) === 27) {
     alert('You have guessed my favorite number!');
+    counter++;
     break;
   }
-  else if(parseInt(guessIt) <= 10  &&  parseInt(guessIt) <= 15) {
+  else if(parseInt(guessIt) > 9 && parseInt(guessIt) <= 15) {
     alert('You have guessed too low.');
     counter++;
+  }
   else if(parseInt(guessIt) > 15 && parseInt(guessIt) <= 26) {
     alert('You are geting close');
     counter++;
@@ -151,5 +157,6 @@ for (var i = 0; i < 4; i++) {
     counter++;
   }
 }
-alert(yourName + 'you have made ' + counter + 'of  guesses');
+alert(yourName + 'you have made ' + counter + ' guesses');
 console.log('This is the number game');
+}
