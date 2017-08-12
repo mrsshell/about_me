@@ -53,7 +53,7 @@ function question3 () {
 question3();
 
 function question4 () {
-  var run = prompt('Do I like to run?')toLowerCase();
+  var run = prompt('Do I like to run?').toLowerCase();
   console.log('Q4: Do I like to run?');
   console.log('A:' + run);
   if (run === 'yes' || run === 'y') {
@@ -91,51 +91,56 @@ function question6() {
   } else {
     alert('You are CORRECT, they are boy and girl faternal twins.');
     correctYay++;
-  }  
+  }
 }
 question6();
 
 var totalCorrect = correctYay;
 var wrongAnswer = youSoWrong;
+  console.log('Total right and wrong answers.')
   alert('Your total right answer is ' + totalCorrect + '.');
   alert('You had ' + wrongAnswer + 'wrong answers');
 
-/*var fav'Color = ['blue', 'green', 'purple', 'pink', 'orange','black'];
-var guessColor = prompt('What is favorite color?');
 
-if (guessColor === favColor[0]) {
-  alert('Yes, one of my favorite colors is blue, but not quite.');
+var favColor = ['blue', 'green', 'purple', 'pink', 'orange','black'];
+
+function question7() {
+  var totalChances = 0;
+  while(totalChances < 6);
+  var guessColor = prompt('What is favorite color? You have six chances.').toLowerCase();
+  console.log('What is my favorite color?');
+  console.log('A:' + guessColor);
+
+  if (guessColor.includes(favColor[0])) {
+    alert('Yes, my favorite colors is ' + favColor);
+    totalChances++
+    break;
+  }
+  else {
+    alert('Nope! Try again.');
+    totalChances++;
+    }
+  }
 }
-else if(guessColor === favColor[1]) {
-  alert('I absolutely love green!');
-}
-else if(guessColor === favColor[2]) {
-  alert('Are you kidding?');
-}
-else if (guessColor === favColor[3]) {
-  alert('Not really!');
-}
-else if(guessColor === favColor[4]) {
-  alert('yea, not quite...');
-}
-else {
-  alert('You are not guessing from this list.');
-}
-console.log('Guessing favorite color game');
+question7();
+
+var totalGuesses = totalChances;
+console.log('Tally of guesses.')
+alert('Made a total of ' + totalGuesses + 'guesses.');
+
 
 var counter = 0;
 
 for (var i = 0; i < 4; i++) {
-  var guessIt = prompt('Can you guess my favorite number?');
+  var guessIt = prompt('Can you guess my favorite number between 10 and 30?');
   counter ++;
   console.log(parseInt(guessIt));
   if (parseInt(guessIt) === 27) {
     alert('You have guessed my favorite number!');
     break;
   }
-  else if(parseInt(guessIt) < 10 ){
+  else if(parseInt(guessIt) <= 10 ){
     alert('You have guessed too low.');
-  }
   else if(parseInt(guessIt) < 10 && parseInt(guessIt) < 26){
     alert('You are geting close');
   }
@@ -143,5 +148,5 @@ for (var i = 0; i < 4; i++) {
     alert('You have guessed too high');
   }
 }
-alert('You have made ' + counter + ' guess');
+alert(yourName + 'you have made ' + counter + ' guesses');
 console.log('This is the number game');
