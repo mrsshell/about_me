@@ -1,99 +1,98 @@
 'use strict';
+
 var yourName = prompt('Hi there, What is your name?');
 alert('Good to meet you ' + yourName + 'let\'s play a guessing game and you can learn all about me!');
 console.log('the user will imput a name to play a game');
 
-alert('We can keep score of all your\'re correct answers.');
-console.log('the user now knows that all correct answers will be counted.');
+alert('We can keep score of all your\'re correct answers, and you\'re wrong answers too.');
+console.log('the user now knows that al correct answers will be counted.');
 
-//var yourCorrectScore = correct;
-//var yourWrong = wrong;
+var correctYay = 0;
+var youSoWrong = 0;
 
 function question1 () {
-  var dreamJob = prompt('Do you think my dream job is building web pages?');
-  if (dreamJob.toLowerCase() === 'yes' ||  dreamJob.toLowerCase() 'y'); {
+  var dreamJob = prompt('Do you think my dream job is building web pages?').toLowerCase();
+  console.log('Q1:what is my dream job?');
+  console.log('A:' + dreamJob);
+  if (dreamJob === 'yes' ||  dreamJob === 'y') {
     alert('You are correct!');
-    correct++;
+    correctYay++;
+ } else {
+    alert('Sorry, you\'re so Wrong.');
+    youSoWrong++;
   }
-  console.log('This is the correct answer for job.');
-  else {
-    alert('Sorry, I really want to build web pages. Wrong.');
-    wrong++;
-  }
-  console.log('This counts as wrong.');
 }
+question1();
 
-function () {
-  var business = prompt('Have I ever owned a business?');
-  if (business.toLowerCase() === 'yes' || business.toLowerCase() === 'y') {
+function question2 () {
+  var business = prompt('Have I ever owned a business?').toLowerCase();
+  console.log('Q2: Have I ever owned a business?');
+  console.log('A:' + business);
+  if (business === 'yes' || business === 'y') {
     alert('Yes, I owned a hair salon!, you are right.');
-    correct++;
-  }
-  console.log('this is the correct answer for business.');
-  else {
+    correctYay++;
+  } else {
     alert('Give me some credit for being ambitiuos. Wrong!');
-    wrong++;
+    youSoWrong++;
   }
-  console.log('wrong answer for business.');
 }
+question2();
 
-function () {
-  var art = prompt('Do I like to fingerpaint?');
-  if (art.toLowerCase() === 'no' || art.toLowerCase() === 'n') {
+function question3 () {
+  var art = prompt('Do I like to fingerpaint?').toLowerCase();
+  console.log('Q3: Do I like to fingerpaint?');
+  console.log('A:' + art);
+  if (art === 'no' || art === 'n') {
     alert('It\'s a bit too messy for me, so you are right!');
-    correct++;
-  }
-  console.log('This is the correct answer for art.');
-  else {
+    correctYay++;
+  }  else {
     alert('Too squishy and gushy for me! Wrong!');
-    wrong++;
+    youSoWrong++;
   }
-  console.log('Not my type of art. Wrong!');
 }
+question3();
 
-function () {
-  var run = prompt('Do I like to run?');
-  if (run.toLowerCase() === 'yes' || run.toLowerCase() === 'y') {
+function question4() {
+  var run = prompt('Do I like to run?')toLowerCase();
+  console.log('Q4: Do I like to run?');
+  console.log('A:' + run);
+  if (run === 'yes' || run === 'y') {
     alert('OF COURSE I DO !!!');
-    correct++;
-  }
-  console.log('This will count as correct for run.');
-  else {
+    correctYay++;
+  } else {
     alert('Running keeps me from getting too stressed out. Sorry, you are wrong.');
-    wrong++;
+    youSoWrong++;
   }
-  console.log('Running');
 }
+question4();
 
 function () {
-  var backpack = prompt('Do I like to backpack?');
-  if (backpack.toLowerCase() === 'yes' || backpack.toLowerCase() === 'y') {
+  var backpack = prompt('Do I like to backpack?').toLowerCase();
+  if (backpack === 'yes' || backpack === 'y') {
     alert('You probably think I\'m a Grearhead too! I do like to backpack.');
-    correct++;
-  console.log('This is the correct answer for backpack.')
+    correctYay++;
   }
   else {
     alert('You must think I\'m a Trenderfoot. Sorry.');
-    wrong++;
+    youSoWrong++;
   }
-  console.log('wrong answer for backpacking.');
 }
 
 function () {
   var twins = prompt('Are my twins identical?');
   if (twins.toLowerCase() === 'yes' || twins.toLowerCase() === 'y') {
     alert('My twins are NOT identical.');
-    wrong++;
+    //wrong++;
   }
   console.log('YES is not the correct answer.')
   else {
     alert('You are CORRECT, they are boy and girl faternal twins.');
-    correct++;
+    //correct++;
   }
   console.log('In this case no is the correct answer.')
 }
 
-var favColor = ['blue', 'green', 'purple', 'pink', 'orange','black'];
+/*var favColor = ['blue', 'green', 'purple', 'pink', 'orange','black'];
 var guessColor = prompt('What is favorite color?');
 
 if (guessColor === favColor[0]) {
