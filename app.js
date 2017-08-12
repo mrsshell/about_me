@@ -16,19 +16,19 @@ alert('You are correct!');
 }
 console.log('This is the correct answer for job.');
 else {
-  alert('Sorry, I really want to build web pages.');
+  alert('Sorry, I really want to build web pages. Wrong.');
   wrong++;
 }
 console.log('This counts as wrong.');
 
 var business = prompt('Have I ever owned a business?');
 if (business.toLowerCase() === 'yes' || business.toLowerCase() === 'y') {
-  alert('Yes, I owned a hair salon!');
-    correct++;
+  alert('Yes, I owned a hair salon!, you are right.');
+  correct++;
 }
 console.log('this is the correct answer for business.');
 else {
-  alert('Give me some credit for being ambitiuos!');
+  alert('Give me some credit for being ambitiuos. Wrong!');
   wrong++;
 }
 console.log('wrong answer for business.');
@@ -36,32 +36,38 @@ console.log('wrong answer for business.');
 var art = prompt('Do I like to fingerpaint?');
 if (art.toLowerCase() === 'no' || art.toLowerCase() === 'n') {
   alert('It\'s a bit too messy for me, so you are right!');
-    correct++;
+  correct++;
 }
 console.log('This is the correct answer for art.');
 else {
-  alert('Too squishy and gushy for me!');
-    wrong++;
+  alert('Too squishy and gushy for me! Wrong!');
+  wrong++;
 }
-console.log('Not my type of art.');
+console.log('Not my type of art. Wrong!');
 
 var run = prompt('Do I like to run?');
 if (run.toLowerCase() === 'yes' || run.toLowerCase() === 'y') {
-  alert('YAAY! GO FOR IT!!!');
+  alert('OF COURSE I DO !!!');
+  correct++;
 }
+console.log('This will count as correct for run.');
 else {
-  alert('Take a hike why don\'t you.');
+  alert('Running keeps me from getting too stressed out. Sorry, you are wrong.');
+  wrong++;
 }
 console.log('Running');
 
-var backpack = prompt('Do you like to backpack?').toLowerCase();
-if (backpack === 'yes' || backpack === 'y') {
-  alert('I bet you\'re a Grearhead too!');
+var backpack = prompt('Do I like to backpack?');
+if (backpack.toLowerCase() === 'yes' || backpack.toLowerCase() === 'y') {
+  alert('You probably think I\'m a Grearhead too! I do like to backpack.');
+  correct++;
+console.log('This is the correct answer for backpack.')
 }
 else {
-  alert('You must be a Trenderfoot.');
+  alert('You must think I\'m a Trenderfoot. Sorry.');
+  wrong++;
 }
-console.log('backpacking');
+console.log('wrong answer for backpacking.');
 
 var twins = prompt('Are my twins identical?').toLowerCase();
 if (twins === 'yes' || twins === 'y') {
