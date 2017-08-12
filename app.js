@@ -1,11 +1,25 @@
 'use strict';
-var yourName = prompt('What is your name?');
-alert('Good to meet you ' + yourName);
-console.log('Where are you from?');
+var yourName = prompt('Hi there, What is your name?');
+alert('Good to meet you ' + yourName + 'let\'s play a guessing game and you can learn all about me!');
+console.log('the user will imput a name to play a game');
 
-var dreamJob = prompt('What is your dream job?');
-alert('Your dream job sounds amazing!');
-console.log('Dream job');
+alert('We can keep score of all your\'re correct answers.');
+console.log('the user now knows that all correct answers will be counted.');
+
+var yourCorrectScore = correct;
+var yourWrong = wrong;
+
+var dreamJob = prompt('Do you think my dream job is building web pages?');
+if (dreamJob.toLowerCase() === 'yes' || 'y'); {
+alert('You are correct!');
+  correct++;
+}
+console.log('This is the correct answer.');
+else {
+  alert('Sorry, I really want to build web pages.');
+  wrong++;
+}
+console.log('This counts as wrong.');
 
 var business = prompt('Have you ever thought about starting a business?').toLowerCase();
 if (business === 'yes' || business === 'y') {
