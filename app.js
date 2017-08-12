@@ -98,8 +98,8 @@ question6();
 var totalCorrect = correctYay;
 var wrongAnswer = youSoWrong;
   console.log('Total right and wrong answers.')
-  alert('Your total right answer is ' + totalCorrect + '.');
-  alert('You had ' + wrongAnswer + 'wrong answers');
+  alert(yourName'Your total right answer is ' + totalCorrect + '.');
+  alert(yourName + 'You had ' + wrongAnswer + 'wrong answers');
 
 
 var favColor = ['blue', 'green', 'purple', 'pink', 'orange','black'];
@@ -126,27 +126,30 @@ question7();
 
 var totalGuesses = totalChances;
 console.log('Tally of guesses.')
-alert('Made a total of ' + totalGuesses + 'guesses.');
+alert(yourName + ' You made a total of ' + totalGuesses + 'guesses.');
 
 
 var counter = 0;
 
 for (var i = 0; i < 4; i++) {
   var guessIt = prompt('Can you guess my favorite number between 10 and 30?');
-  counter ++;
-  console.log(parseInt(guessIt));
+  console.log('Q: Guess my favorite number.')
+  console.log('A:' + guessIt + 'number of guesses' counter);
   if (parseInt(guessIt) === 27) {
     alert('You have guessed my favorite number!');
     break;
   }
-  else if(parseInt(guessIt) <= 10 ){
+  else if(parseInt(guessIt) <= 10  &&  parseInt(guessIt) <= 15) {
     alert('You have guessed too low.');
-  else if(parseInt(guessIt) < 10 && parseInt(guessIt) < 26){
+    counter++;
+  else if(parseInt(guessIt) > 15 && parseInt(guessIt) <= 26) {
     alert('You are geting close');
+    counter++;
   }
   else if (parseInt(guessIt) > 27) {
     alert('You have guessed too high');
+    counter++;
   }
 }
-alert(yourName + 'you have made ' + counter + ' guesses');
+alert(yourName + 'you have made ' + counter + 'of  guesses');
 console.log('This is the number game');
