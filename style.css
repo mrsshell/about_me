@@ -3,7 +3,6 @@ header, aside, section, footer, {
   body {
     background-image: url(http://www.uidownload.com/files/841/25/241/free-radiant-background.jpg);
   }
-
   h1{
     background-color: #ccffcc;
     color: #3399ff;
@@ -44,13 +43,6 @@ header, aside, section, footer, {
   font-size: 20px;
   font-weight: 25px;
 }
-/*div {
-  width: 200px;
-  height:200px;
-  border: thin;
-  border-color: #cc00ff;
-
-}*/
 .content-box
 {
   box-sizing: border-box;
