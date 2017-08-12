@@ -69,15 +69,19 @@ else {
 }
 console.log('wrong answer for backpacking.');
 
-var twins = prompt('Are my twins identical?').toLowerCase();
-if (twins === 'yes' || twins === 'y') {
+var twins = prompt('Are my twins identical?');
+if (twins.toLowerCase() === 'yes' || twins.toLowerCase() === 'y') {
   alert('My twins are NOT identical.');
+  wrong++;
 }
+console.log('YES is not the correct answer.')
 else {
   alert('You are CORRECT, they are boy and girl faternal twins.');
+  correct++;
 }
+console.log('In this case no is the correct answer.')
 
-var favColor = ['blue', 'green', 'purple', 'pink', 'orange'];
+var favColor = ['blue', 'green', 'purple', 'pink', 'orange','black'];
 var guessColor = prompt('What is favorite color?');
 
 if (guessColor === favColor[0]) {
