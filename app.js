@@ -104,18 +104,20 @@ var wrongAnswer = youSoWrong;
 var goodTally = 0;
 function question8 () {
   var favColor = ['blue', 'green', 'purple', 'pink', 'orange', 'red'];
+  var arrayLength = favColor.length;
   var guessColor = prompt('Cn you guess one of my favorite my colors? You have lots os chnces!').toLowerCase();
   console.log('Q: What is my favorite color?');
   console.log('A:' + guessColor);
-  for (var i = 0; i <= 6; i++) {
+  for (var i = 0; i <= arrayLength; i++) {
     if (guessColor === favColor[i]) {
-      alert('Yes, that is one of my favorite colors.');
+      alert('Yes, ' +  [i] + ' is one of my favorite colors.');
       prompt('What is another favorite color?');
       goodTally++
     }
     else if (guessColor !== favColor[i]) {
     alert('Guess again!');
     prompt('What is one of my favorite colors');
+    continue;
     }
   }
   alert(' Oh my gosh, thank goodness that is over! ' + goodTally + ':' +' correct!');
