@@ -4,6 +4,7 @@ var yourName = prompt('Hi there, What is your name?');
 alert('Good to meet you ' + yourName + ' ' + 'let\'s play a guessing game and you can learn all about me!');
 console.log('the user will imput a name to play a game');
 
+
 alert('We can keep score of all your\'re correct answers, and you\'re wrong answers too.');
 console.log('the user now knows that al correct answers will be counted.');
 
