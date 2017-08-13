@@ -1,50 +1,46 @@
 header, aside, section, footer, {
   display: block}
-  body {
-    background-image: url(http://www.uidownload.com/files/841/25/241/free-radiant-background.jpg);
+body {
+  background-image: url(http://www.uidownload.com/files/841/25/241/free-radiant-background.jpg);
   }
-  h1{
-    background-color: #ccffcc;
-    color: #3399ff;
-    align-content: center;
-    font-family: sans-serif;
-    font-weight: 40px;
-    font-size: 70px;
-    padding-left: 50px;
-    }
-
-    h2{
-      color: #6600cc;
-      font-family: sans-serif;
-      font-weight: 25px;
-      font-size: 25px;
-    }
-
-    h3{
-      color: #6600cc;
-      font-family: sans-serif;
-      font-weight: 20px;
-      font-size: 20px;
-    }
- .activities {
-   display: block;
-   color: #6600cc;
-   font-family: sans-serif;
-   font-weight: 25px;
-   float: right;
-   margin:2%auto;
-   width:20%;
-   padding:15px,15px,15px,30px;
-   border: thin;
-   box-sizing: border-box;
- }
+.header{
+  background-color: #ccffcc;
+  color: #3399ff;
+  align-content: center;
+  font-family: sans-serif;
+  font-weight: 40px;
+  font-size: 40px;
+  padding-left: 50px;
+  }
+.guess{
+  color: #6600cc;
+  font-family: sans-serif;
+  font-weight: 25px;
+  font-size: 25px;
+  }
+h3{
+  color: #6600cc;
+  font-family: sans-serif;
+  font-weight: 20px;
+  font-size: 20px;
+  }
+.activities {
+  display: block;
+  color: #6600cc;
+  font-family: sans-serif;
+  font-weight: 25px;
+  float: right;
+  margin:2%auto;
+  width:20%;
+  padding:15px,15px,15px,30px;
+  border: thin;
+  box-sizing: border-box;
+  }
 .doing {
-
   font-size: 20px;
   font-weight: 25px;
-}
-.content-box
-{
+  }
+.content-box {
   box-sizing: border-box;
   margin:auto;
   border: 20px solid #cc00ff;
@@ -60,14 +56,14 @@ header, aside, section, footer, {
   width: 30%;
   margin: auto;
   text-align: left;
-}
+  }
 .footer {
-background-color: #ccffcc;
-width: auto;
-color: #6600cc;
-font-family: sans-serif;
-font-weight: 25px;
-font-size: 25px;
-float: right;
-padding-left: 200px;
-}
+  background-color: #ccffcc;
+  width: auto;
+  color: #3399ff;
+  font-family: sans-serif;
+  font-weight: 40px;
+  font-size: 40px;
+  float: right;
+  padding-left: 10px;
+  }

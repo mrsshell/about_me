@@ -101,26 +101,24 @@ var wrongAnswer = youSoWrong;
   alert('Your total correct answers: ' + totalCorrect + '!');
   alert('And , by the way ' + yourName + ' You had ' + wrongAnswer + ' wrong answers.');
 
-var tally = 0;
 var goodTally = 0;
 function question8 () {
   var favColor = ['blue', 'green', 'purple', 'pink', 'orange', 'red'];
-  var guessColor = prompt('Please name one of my favorite my colors? You have 6 attempts.').toLowerCase();
+  var guessColor = prompt('Cn you guess one of my favorite my colors? You have lots os chnces!').toLowerCase();
   console.log('Q: What is my favorite color?');
   console.log('A:' + guessColor);
-  for (var i = 0; i <= favColor.length; i++) {
+  for (var i = 0; i <= 6; i++) {
     if (guessColor === favColor[i]) {
       alert('Yes, that is one of my favorite colors.');
       prompt('What is another favorite color?');
       goodTally++
     }
-  if (guessColor !== favColor[i]) {
+    else if (guessColor !== favColor[i]) {
     alert('Guess again!');
     prompt('What is one of my favorite colors');
-    tally++;
     }
   }
-  alert(' YOU have ' + tally + ' wrong, and ' + goodTally + ' right guesses.');
+  alert(' Oh my gosh, thank goodness that is over! ' + goodTally + ':' +' correct!');
 }
 question8();
 
@@ -150,7 +148,8 @@ function question9 () {
       counter++;
     }
   }
-  alert('you have made ' + counter + ' guesses for this game, and  ' +  goodYay + ' overall total correct answers.' );
-  console.log('Total for this game, and overall total correct,');
+  alert('You have made ' + counter + ' guesses for this game.' );
+  console.log('Total guesses for this game.');
 }
 question9();
+alert('Thank you for playing today ' + yourName + '!');
