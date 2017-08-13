@@ -1,5 +1,5 @@
 'use strict';
-/*
+
 var yourName = prompt('Hi there, What is your name?');
 alert('Good to meet you ' + yourName + ' ' + 'let\'s play a guessing game and you can learn all about me!');
 console.log('the user will imput a name to play a game');
@@ -100,29 +100,28 @@ var wrongAnswer = youSoWrong;
   console.log('Total right and wrong answers.');
   alert('Your total correct answers: ' + totalCorrect + '!');
   alert('And , by the way ' + yourName + ' You had ' + wrongAnswer + ' wrong answers.');
-*/
+
 var goodTally = 0;
-//function question8 () {
+function question8 () {
   var favColor = ['blue', 'green', 'purple', 'pink', 'orange', 'red'];
   var arrayLength = favColor.length;
   var guessColor = prompt('Cn you guess one of my favorite my colors? You have lots of chnces!');
   console.log('Q: What is my favorite color?');
   console.log('A:' + guessColor);
   for (var i = 0; i <= arrayLength; i++) {
-    console.log('line 112', favColor.includes(guessColor))
-    if (favColor.includes(guessColor)) {
+    if (favColor.includes(guessColor.toLowerCase())) {
       console.log(favColor.includes(guessColor))
       alert('Yes, ' +  guessColor + ' is one of my favorite colors.');
-      prompt('What is another favorite color?');
+      guessColor = prompt('What is another favorite color?');
       goodTally++
     } else {
     alert('Guess again!');
-    prompt('What is one of my favorite colors');
+    guessColor = prompt('What is one of my favorite colors');
     }
   }
   alert(' Oh my gosh, thank goodness that is over! ' + goodTally + ':' +' correct!');
-//}
-//question8();
+}
+question8();
 
 function question9 () {
   var goodYay = 0;
