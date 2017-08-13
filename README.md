@@ -5,3 +5,4 @@ Changes to html and app.js
 Placed everything in functions.
 
 YAY!
+This page is going live!!!
