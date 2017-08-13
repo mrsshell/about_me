@@ -52,7 +52,7 @@ header, aside, section, footer, {
   text-align: center;
   background-color: #ccccff;
   font-family: sans-serif;
-  font-weight: 30px;
+  font-weight: 40px;
   color: #660066;
   }
 
@@ -60,4 +60,14 @@ header, aside, section, footer, {
   width: 30%;
   margin: auto;
   text-align: left;
+}
+.footer {
+background-color: #ccffcc;
+width: auto;
+color: #6600cc;
+font-family: sans-serif;
+font-weight: 25px;
+font-size: 25px;
+float: right;
+padding-left: 200px;
 }

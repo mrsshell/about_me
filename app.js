@@ -1,5 +1,5 @@
 'use strict';
-/*
+
 var yourName = prompt('Hi there, What is your name?');
 alert('Good to meet you ' + yourName + ' ' + 'let\'s play a guessing game and you can learn all about me!');
 console.log('the user will imput a name to play a game');
@@ -108,7 +108,7 @@ function question8 () {
   var guessColor = prompt('Please name one of my favorite my colors? You have 6 attempts.').toLowerCase();
   console.log('Q: What is my favorite color?');
   console.log('A:' + guessColor);
-  for (var i = 0; i <= 6 ; i++) {
+  for (var i = 0; i <= favColor.length; i++) {
     if (guessColor === favColor[i]) {
       alert('Yes, that is one of my favorite colors.');
       prompt('What is another favorite color?');
