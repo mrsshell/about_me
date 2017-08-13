@@ -1,122 +1,157 @@
 'use strict';
-var yourName = prompt('What is your name?');
-alert('Good to meet you ' + yourName);
-console.log('Where are you from?');
 
-var dreamJob = prompt('What is your dream job?');
-alert('Your dream job sounds amazing!');
-console.log('Dream job');
+var yourName = prompt('Hi there, What is your name?');
+alert('Good to meet you ' + yourName + ' ' + 'let\'s play a guessing game and you can learn all about me!');
+console.log('the user will imput a name to play a game');
+
+
+alert('We can keep score of all your\'re correct answers, and you\'re wrong answers too.');
+console.log('the user now knows that al correct answers will be counted.');
+
+var correctYay = 0;
+var youSoWrong = 0;
 
 function question1 () {
-  var business = prompt('Have you ever thought about starting a business?').toLowerCase();
-  if (business === 'yes' || business === 'y') {
-    alert('Good for you!');
+  var dreamJob = prompt('Do you think my dream job is building web pages?').toLowerCase();
+  console.log('Q1:what is my dream job?');
+  console.log('A:' + dreamJob);
+  if (dreamJob === 'yes' ||  dreamJob === 'y') {
+    alert('You are correct!');
+    correctYay++;
+ } else {
+    alert('Sorry, you\'re so Wrong.');
+    youSoWrong++;
   }
-  else {
-    alert('Keep dreaming, and one day you will do it!');
-  }
-  console.log('jobs');
 }
 question1();
 
 function question2 () {
-  var art = prompt('Do you enjoy fingerpainting?').toLowerCase();
-  if (art === 'yes' || art === 'y') {
-    alert('Go ahead, let\'s make a mess!');
+  var business = prompt('Have I ever owned a business?').toLowerCase();
+  console.log('Q2: Have I ever owned a business?');
+  console.log('A:' + business);
+  if (business === 'yes' || business === 'y') {
+    alert('Yes, I owned a hair salon!, you are right.');
+    correctYay++;
+  } else {
+    alert('Give me some credit for being ambitiuos. Wrong!');
+    youSoWrong++;
   }
-  else {
-    alert('Go wash your hands anyway!');
-  }
-  console.log('Messy art');
 }
 question2();
 
 function question3 () {
-  var run = prompt('Do you run?').toLowerCase();
-  if (run === 'yes' || run === 'y') {
-    alert('YAAY! GO FOR IT!!!');
+  var art = prompt('Do I like to fingerpaint?').toLowerCase();
+  console.log('Q3: Do I like to fingerpaint?');
+  console.log('A:' + art);
+  if (art === 'no' || art === 'n') {
+    alert('It\'s a bit too messy for me, so you are right!');
+    correctYay++;
+  }  else {
+    alert('Too squishy and gushy for me! Wrong!');
+    youSoWrong++;
   }
-  else {
-    alert('Take a hike why don\'t you.');
-  }
-  console.log('Running');
 }
 question3();
 
 function question4 () {
-  var backpack = prompt('Do you like to backpack?').toLowerCase();
-  if (backpack === 'yes' || backpack === 'y') {
-    alert('I bet you\'re a Grearhead too!');
+  var run = prompt('Do I like to run?').toLowerCase();
+  console.log('Q4: Do I like to run?');
+  console.log('A:' + run);
+  if (run === 'yes' || run === 'y') {
+    alert('OF COURSE I DO !!!');
+    correctYay++;
+  } else {
+    alert('Running keeps me from getting too stressed out. Sorry, you are wrong.');
+    youSoWrong++;
   }
-  else {
-    alert('You must be a Trenderfoot.');
-  }
-  console.log('backpacking');
 }
 question4();
 
-function question5 () {
-  var twins = prompt('Are my twins identical?').toLowerCase();
-  if (twins === 'yes' || twins === 'y') {
-    alert('My twins are NOT identical.');
+function question5() {
+  var backpack = prompt('Do I like to backpack?').toLowerCase();
+  console.log('Q5: Do I like to backpack?');
+  console.log('A' + backpack);
+  if (backpack === 'yes' || backpack === 'y') {
+    alert('You probably think I\'m a Grearhead too! I do like to backpack.');
+    correctYay++;
   }
   else {
-    alert('You are CORRECT, they are boy and girl faternal twins.');
+    alert('You must think I\'m a Trenderfoot. Sorry.');
+    youSoWrong++;
   }
-  console.log('twins');
 }
 question5();
 
-function question6 () {
-  var favColor = ['blue', 'green', 'purple', 'pink', 'orange', 'black'];
-  var guessColor = prompt('What is favorite color?').toLowerCase();
-
-  if (guessColor === favColor[0]) {
-    alert('Yes, one of my favorite colors is blue, but not quite.');
+function question6() {
+  var twins = prompt('Are my twins identical?').toLowerCase();
+  console.log('Q6: Are my twins identical?');
+  console.log('A:' + twins);
+  if (twins === 'yes' || twins === 'y') {
+    alert('My twins are NOT identical.');
+    youSoWrong++;
+  } else {
+    alert('You are CORRECT, they are boy and girl faternal twins.');
+    correctYay++;
   }
-  else if(guessColor === favColor[1]) {
-    alert('I absolutely love green!');
-  }
-  else if(guessColor === favColor[2]) {
-    alert('Are you kidding?');
-  }
-  else if (guessColor === favColor[3]) {
-    alert('Not really!');
-  }
-  else if(guessColor === favColor[4]) {
-    alert('yea, not quite...');
-  }
-  else if(guessColor === favColor[5]) {
-    alert('Not feeling dark today.');
-  }
-  else {
-    alert('You are not guessing from this list.');
-  }
-  console.log('Guessing favorite color game');
 }
 question6();
 
-function question7 () {
+var totalCorrect = correctYay;
+var wrongAnswer = youSoWrong;
+  console.log('Total right and wrong answers.');
+  alert('Your total correct answers: ' + totalCorrect + '!');
+  alert('And , by the way ' + yourName + ' You had ' + wrongAnswer + ' wrong answers.');
+
+var goodTally = 0;
+function question8 () {
+  var favColor = ['blue', 'green', 'purple', 'pink', 'orange', 'red'];
+  var arrayLength = favColor.length;
+  var guessColor = prompt('Cn you guess one of my favorite my colors? You have lots of chnces!');
+  console.log('Q: What is my favorite color?');
+  console.log('A:' + guessColor);
+  for (var i = 0; i <= arrayLength; i++) {
+    if (favColor.includes(guessColor.toLowerCase())) {
+      console.log(favColor.includes(guessColor))
+      alert('Yes, ' +  guessColor + ' is one of my favorite colors.');
+      guessColor = prompt('What is another favorite color?');
+      goodTally++
+    } else {
+    alert('Guess again!');
+    guessColor = prompt('What is one of my favorite colors');
+    }
+  }
+  alert(' Oh my gosh, thank goodness that is over! ' + goodTally + ':' +' correct!');
+}
+question8();
+
+function question9 () {
+  var goodYay = 0;
   var counter = 0;
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i <= 4; i++) {
     var guessIt = prompt('Can you guess my favorite number between 10 and 30?');
-    counter ++;
-    console.log(parseInt(guessIt));
+    console.log('Q: Guess my favorite number.')
+    console.log('A:' + guessIt + 'number of guesses' + counter);
     if (parseInt(guessIt) === 27) {
       alert('You have guessed my favorite number!');
-      break;
+      counter++;
+      goodYay++;
+      i = 4;
     }
-    else if(parseInt(guessIt) <= 20 ){
+    else if(parseInt(guessIt) > 1 && parseInt(guessIt) <= 15) {
       alert('You have guessed too low.');
+      counter++;
     }
-    else if(parseInt(guessIt) > 20 && parseInt(guessIt) <= 26){
+    else if(parseInt(guessIt) > 15 && parseInt(guessIt) <= 26) {
       alert('You are geting close');
+      counter++;
     }
     else if (parseInt(guessIt) > 27) {
       alert('You have guessed too high');
+      counter++;
     }
   }
-  console.log('This is the number game');
-  alert('You have made ' + counter + ' guesses.');
+  alert('You have made ' + counter + ' guesses for this game.' );
+  console.log('Total guesses for this game.');
 }
-question7();
+question9();
+alert('Thank you for playing today ' + yourName + '!');
